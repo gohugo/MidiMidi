@@ -9,7 +9,9 @@ public class MidiToHumanInterpretor : MonoBehaviour
 	[SerializeField]
 	public string midiPath;
 
-	private string header;
+	private string headerHex;
+
+	private string MThdHex;
 
 	private int headerLenght;
 
@@ -17,7 +19,7 @@ public class MidiToHumanInterpretor : MonoBehaviour
 
 	private int numberOfTrack;
 
-	private int division;
+	private int division; 
 
 
 	private void Awake()
@@ -31,7 +33,7 @@ public class MidiToHumanInterpretor : MonoBehaviour
 	{
 		Debug.Log("ReadMidiFile()");
 		// Example Header:			4D 54 68 64 00 00 00 06 ff ff nn nn dd dd
-		//	separeted like this:	[4D 54 68 64] [00 00 00 06] [ff ff] [nn nn] [dd dd]
+		// separeted like this:	[4D 54 68 64] [00 00 00 06] [ff ff] [nn nn] [dd dd]
 		// Header format:  header_chunk = "MThd" + <header_length> + <format> + <n> + <division>
 
 		FileStream fs = new FileStream(midiPath, FileMode.Open);
@@ -41,12 +43,33 @@ public class MidiToHumanInterpretor : MonoBehaviour
 		for (int i = 0; (hexIn = fs.ReadByte()) != -1; i++)
 		{
 			hex += string.Format("{0:X2}", hexIn);
-			
+
 		}
 		if (!string.IsNullOrEmpty(hex))
 		{
 			Debug.Log(hex);
+			ReadHeader(hex);
 		}
+		else
+		{
+			Debug.Log("the file is empty or null");
+		}
+
+	}
+
+	private void ReadHeader(string hex) {
+
+		headerHex = hex.Substring(0, 28);
+		MThdHex = hex.Substring(0, 8);
+		//4;
+
+		headerLenght = int.Parse(hex.Substring(8, 8), System.Globalization.NumberStyles.HexNumber);
+
+		Debug.Log("headerHex = " + headerHex);
+		Debug.Log("MThdHex = " + MThdHex);
+		Debug.Log("headerLenght = " + headerLenght);
+
+
 
 	}
 
