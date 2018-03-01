@@ -32,6 +32,7 @@ public class MidiToHumanInterpretor : MonoBehaviour
 	private void ReadMidiFile()
 	{
 		Debug.Log("ReadMidiFile()");
+
 		// Example Header:			4D 54 68 64 00 00 00 06 ff ff nn nn dd dd
 		// separeted like this:	[4D 54 68 64] [00 00 00 06] [ff ff] [nn nn] [dd dd]
 		// Header format:  header_chunk = "MThd" + <header_length> + <format> + <n> + <division>
@@ -61,13 +62,18 @@ public class MidiToHumanInterpretor : MonoBehaviour
 
 		headerHex = hex.Substring(0, 28);
 		MThdHex = hex.Substring(0, 8);
-		//4;
-
 		headerLenght = int.Parse(hex.Substring(8, 8), System.Globalization.NumberStyles.HexNumber);
+		formatType = int.Parse(hex.Substring(16, 4), System.Globalization.NumberStyles.HexNumber);
+		numberOfTrack = int.Parse(hex.Substring(20, 4), System.Globalization.NumberStyles.HexNumber);
+		division = int.Parse(hex.Substring(24, 4), System.Globalization.NumberStyles.HexNumber);
 
-		Debug.Log("headerHex = " + headerHex);
-		Debug.Log("MThdHex = " + MThdHex);
-		Debug.Log("headerLenght = " + headerLenght);
+
+		Debug.Log("headerHex = "     + headerHex);
+		Debug.Log("MThdHex = "       + MThdHex);
+		Debug.Log("headerLenght = "  + headerLenght);
+		Debug.Log("formatType = "    + formatType);
+		Debug.Log("numberOfTrack = " + numberOfTrack);
+		Debug.Log("division = "      + division);
 
 
 
