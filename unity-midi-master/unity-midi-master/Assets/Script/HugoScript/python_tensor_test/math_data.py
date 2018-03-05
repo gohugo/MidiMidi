@@ -1,14 +1,23 @@
 import pandas as pd
 import tensorflow as tf
-print("hello_math data class")
-COLUMNS = ["number1", "number2", "sum_result"]
-def load_data(y_name='sum_result'):
 
-    train = pd.read_csv('add.csv', names=COLUMNS, skipinitialspace=True)
+TRAIN_URL = "http://download.tensorflow.org/data/iris_training.csv"
+TEST_URL = "http://download.tensorflow.org/data/iris_test.csv"
+
+CSV_COLUMN_NAMES = ['number1', 'number2',
+                    'number3', 'number4', 'Species']
+SPECIES = ['less', 'equal', 'more']
+
+def load_data(y_name='Species'):
+
+    train = pd.read_csv('iris_training.csv', names=CSV_COLUMN_NAMES, header=0)
     train_x, train_y = train, train.pop(y_name)
-    test = pd.read_csv('test.csv', names=COLUMNS, skipinitialspace=True, skiprows=1)
+    
+    test = pd.read_csv('iris_test.csv', names=CSV_COLUMN_NAMES,header=0)
     test_x, test_y = test, test.pop(y_name)
+    
     return (train_x, train_y), (test_x, test_y)
+
 
 def train_input_fn(features, labels, batch_size):
     """An input function for training"""
@@ -57,7 +66,7 @@ def _parse_line(line):
     features = dict(zip(CSV_COLUMN_NAMES, fields))
 
     # Separate the label from the features
-    label = features.pop('sum_result')
+    label = features.pop('Species')
 
     return features, label
 

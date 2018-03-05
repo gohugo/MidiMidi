@@ -30,6 +30,8 @@ def my_model(features, labels, mode, params):
     """DNN with three hidden layers, and dropout of 0.1 probability."""
     # Create three fully connected layers each layer having a dropout
     # probability of 0.1.
+    print("^my_model^")
+    print(labels)
     net = tf.feature_column.input_layer(features, params['feature_columns'])
     for units in params['hidden_units']:
         net = tf.layers.dense(net, units=units, activation=tf.nn.relu)
@@ -92,6 +94,7 @@ def main(argv):
         })
 
     # Train the Model.
+    print(train_x)
     classifier.train(
         input_fn=lambda:iris_data.train_input_fn(train_x, train_y, args.batch_size),
         steps=args.train_steps)
