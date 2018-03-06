@@ -1,4 +1,4 @@
-Skip to content
+﻿Skip to content
 This repository
 Search
 Pull requests
@@ -336,6 +336,7 @@ ASALocalRun/
 
 # MSBuild Binary and Structured Log
 *.binlog
+#Tracking
 
 © 2018 GitHub, Inc.
 Terms
@@ -348,4 +349,6 @@ API
 Training
 Shop
 Blog
-About
+
+# ---------start of my wanted ignore stuff----------
+**/Created
