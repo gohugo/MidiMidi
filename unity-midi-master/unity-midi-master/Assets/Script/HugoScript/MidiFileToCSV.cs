@@ -1,4 +1,5 @@
 ﻿using AudioSynthesis.Midi;
+using AudioSynthesis.Midi.Event;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -40,16 +41,18 @@ public class MidiFileToCSV : MonoBehaviour
 		MidiTrack[] tracks = midiFile.Tracks;
 
 		string midiName = Path.GetFileNameWithoutExtension(midiSource.GetName());
-
 		int ntrack = tracks.Length;
-		//before your loop
-		var csv = new StringBuilder();
-
-
-		//in your loop
 
 		//Suggestion made by KyleMit
-		var newLine = string.Format("{0},{1}", midiName, ntrack);
+		string newLine = string.Format("{0},{1}", midiName, ntrack);
+		foreach (MidiTrack track in tracks)
+		{
+			foreach (MidiEvent midEvent in track.MidiEvents)
+			{
+				newLine = string.Format("{0},{1},{2},{3}", newLine, midEvent.Command,midEvent.Data1, midEvent.Data2);
+			}
+		}
+		var csv = new StringBuilder();
 		csv.AppendLine(newLine);
 
 		string path = Path.Combine(Path.Combine(Application.streamingAssetsPath, "Created"), midiName + ".csv");

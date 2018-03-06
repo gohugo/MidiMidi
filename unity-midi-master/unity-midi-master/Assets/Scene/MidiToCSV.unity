@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   midiSource:
-    streamingAssetPath: ExampleMidis/Super Mario Odyssey OST - Jump Up, Super Star!.mid
+    streamingAssetPath: ExampleMidis/pathetique-2.mid
   author: 2
 --- !u!4 &1504738423
 Transform:
