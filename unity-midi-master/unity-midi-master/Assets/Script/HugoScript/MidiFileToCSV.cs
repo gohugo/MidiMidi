@@ -49,7 +49,8 @@ public class MidiFileToCSV : MonoBehaviour
 		{
 			foreach (MidiEvent midEvent in track.MidiEvents)
 			{
-				newLine = string.Format("{0},{1},{2},{3}", newLine, midEvent.Command,midEvent.Data1, midEvent.Data2);
+				newLine = string.Format("{0},{1}", newLine, midEvent.ToString());
+				newLine = string.Format("{0},{1},{2},{3}",newLine, midEvent.Command,midEvent.Data1, midEvent.Data2);
 			}
 		}
 		var csv = new StringBuilder();
