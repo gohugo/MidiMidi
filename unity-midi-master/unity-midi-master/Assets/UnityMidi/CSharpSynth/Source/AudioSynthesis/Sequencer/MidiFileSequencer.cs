@@ -13,6 +13,7 @@ using System;
 using AudioSynthesis.Midi;
 using AudioSynthesis.Synthesis;
 using AudioSynthesis.Midi.Event;
+using System.Diagnostics;
 
 namespace AudioSynthesis.Sequencer
 {
@@ -193,7 +194,8 @@ namespace AudioSynthesis.Sequencer
                 {
                     MidiMessage m = mdata[eventIndex]; 
                     synth.ProcessMidiMessage(m.channel, m.command, m.data1, m.data2);
-                }
+					Debug.WriteLine(m);
+				}
                 eventIndex++;
             }
             sampleTime += amount;

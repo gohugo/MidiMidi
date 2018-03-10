@@ -2,6 +2,7 @@
 using AudioSynthesis.Midi;
 using AudioSynthesis.Bank;
 using AudioSynthesis.Bank.Patches;
+using UnityEngine;
 
 namespace AudioSynthesis.Synthesis
 {
@@ -23,6 +24,7 @@ namespace AudioSynthesis.Synthesis
         /// <param name="velocity">The volume of the voice.</param>
         public void NoteOn(int channel, int note, int velocity)
         {
+			PianoUI.NoteOn(channel, note, velocity);
             // Get the correct instrument depending if it is a drum or not
             SynthParameters sChan = synthChannels[channel];
             Patch inst = bank.GetPatch(sChan.bankSelect, sChan.program);
@@ -198,6 +200,7 @@ namespace AudioSynthesis.Synthesis
         /// <param name="midimsg">A midi message struct.</param>
         public void ProcessMidiMessage(int channel, int command, int data1, int data2)
         {
+			
             switch (command)
             {
                 case 0x80: //NoteOff

@@ -85,13 +85,14 @@ namespace UnityMidi
 
         void OnAudioFilterRead(float[] data, int channel)
         {
+			Debug.Log("OnAudioFilterRead");
 
-            int count = 0;
+			int count = 0;
             while (count < data.Length)
             {
-                Debug.Log("bufferHead = " + bufferHead);
-                if (currentBuffer != null)
-                    Debug.Log("currentBuffer.Length = " + currentBuffer.Length);
+                //Debug.Log("bufferHead = " + bufferHead);
+                //if (currentBuffer != null)
+                //    Debug.Log("currentBuffer.Length = " + currentBuffer.Length);
                 if (currentBuffer == null || bufferHead >= currentBuffer.Length)
                 {
 
