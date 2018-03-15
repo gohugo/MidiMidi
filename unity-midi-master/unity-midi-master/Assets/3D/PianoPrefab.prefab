@@ -524,7 +524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4240144023718314}
   m_Layer: 0
-  m_Name: Key_Set_2
+  m_Name: black1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 33870001801742392}
   - component: {fileID: 23620270863668142}
   m_Layer: 0
-  m_Name: piano_key 25
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2042,7 +2042,7 @@ GameObject:
   - component: {fileID: 33800757965582020}
   - component: {fileID: 23019449197403212}
   m_Layer: 0
-  m_Name: piano_key 20
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2805,7 +2805,7 @@ GameObject:
   - component: {fileID: 33241772067525592}
   - component: {fileID: 23356538771334590}
   m_Layer: 0
-  m_Name: piano_key 24
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10959,83 +10959,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderers:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  keysOn: 
+  - {fileID: 23742553005289644}
+  - {fileID: 23019449197403212}
+  - {fileID: 23966467347333084}
+  - {fileID: 23814612666581350}
+  - {fileID: 23356538771334590}
+  - {fileID: 23800526297884386}
+  - {fileID: 23620270863668142}
+  - {fileID: 23082360366484786}
+  - {fileID: 23378385732804516}
+  - {fileID: 23901909498237794}
+  - {fileID: 23311015685719028}
+  - {fileID: 23431812602199154}
+  - {fileID: 23425549713353582}
+  - {fileID: 23161513180711802}
+  - {fileID: 23259825378664248}
+  - {fileID: 23578281344746784}
+  - {fileID: 23245392018659648}
+  - {fileID: 23116202619893200}
+  - {fileID: 23830785634497248}
+  - {fileID: 23848891170430948}
+  - {fileID: 23890000976948366}
+  - {fileID: 23896510245688392}
+  - {fileID: 23985633662077272}
+  - {fileID: 23249453994914346}
+  - {fileID: 23645947972467394}
+  - {fileID: 23876323029665238}
+  - {fileID: 23554682174025278}
+  - {fileID: 23519390419511154}
+  - {fileID: 23803990284207562}
+  - {fileID: 23330444969153006}
+  - {fileID: 23709215583077566}
+  - {fileID: 23526151813315276}
+  - {fileID: 23681468478397058}
+  - {fileID: 23530254543777686}
+  - {fileID: 23483171113427868}
+  - {fileID: 23561156213892078}
+  - {fileID: 23235241256153964}
+  - {fileID: 23952426981989422}
+  - {fileID: 23871323337530206}
+  - {fileID: 23721988967168118}
+  - {fileID: 23872438554628730}
+  - {fileID: 23823203018051414}
+  - {fileID: 23344859875937896}
+  - {fileID: 23369297561862500}
+  - {fileID: 23077007345500630}
+  - {fileID: 23326275348140474}
+  - {fileID: 23077007345500630}
+  - {fileID: 23312393345873206}
+  - {fileID: 23728391685759570}
+  - {fileID: 23599219723192116}
+  - {fileID: 23314396426068606}
+  - {fileID: 23511552946717532}
+  - {fileID: 23930489793240148}
+  - {fileID: 23596304297019322}
+  - {fileID: 23338402177967910}
+  - {fileID: 23937970335170848}
+  - {fileID: 23504972606578808}
+  - {fileID: 23867317464048892}
+  - {fileID: 23959917006327024}
+  - {fileID: 23399551248717910}
+  - {fileID: 23959917006327024}
+  - {fileID: 23729720306099254}
+  - {fileID: 23426958652739358}
+  - {fileID: 23503169455591098}
+  - {fileID: 23827096410079264}
+  - {fileID: 23047511168822828}
+  - {fileID: 23956053922013884}
+  - {fileID: 23611899413897644}
+  - {fileID: 23988138036657216}
+  - {fileID: 23894783274880540}
+  - {fileID: 23754181522825652}
+  - {fileID: 23300688915255132}
+  - {fileID: 23888726130532120}
+  - {fileID: 23139974172208498}
+  - {fileID: 23944619959621498}
+  - {fileID: 23539680498970956}
+  - {fileID: 23761491251586094}
+  - {fileID: 23060897186538864}
+  - {fileID: 23859717015668722}
+  - {fileID: 23181901892917676}
+  keysOn: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

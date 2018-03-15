@@ -3,16 +3,27 @@ using AudioSynthesis.Midi;
 using AudioSynthesis.Bank;
 using AudioSynthesis.Bank.Patches;
 using UnityEngine;
+using System.Collections;
 
 namespace AudioSynthesis.Synthesis
 {
-    public partial class Synthesizer
+	
+	public partial class Synthesizer
     {
-        internal Queue<MidiMessage> midiEventQueue;
+		public static PianoAnimation.KeyChange Keychange;
+		internal Queue<MidiMessage> midiEventQueue;
         internal int[] midiEventCounts;
         private Patch[] layerList;
 
-        public IEnumerator<MidiMessage> MidiMessageEnumerator
+		public IEnumerator ThisWillBeExecutedOnTheMainThread(int note,bool isOn)
+		{
+			Debug.Log("This is executed from the main thread");
+			Keychange(note, isOn);
+			yield return null;
+		}
+
+
+		public IEnumerator<MidiMessage> MidiMessageEnumerator
         {
             get { return midiEventQueue.GetEnumerator(); }
         }
@@ -24,9 +35,11 @@ namespace AudioSynthesis.Synthesis
         /// <param name="velocity">The volume of the voice.</param>
         public void NoteOn(int channel, int note, int velocity)
         {
-			PianoUI.NoteOn(channel, note, velocity);
-            // Get the correct instrument depending if it is a drum or not
-            SynthParameters sChan = synthChannels[channel];
+			UnityMainThreadDispatcher.Instance().Enqueue(ThisWillBeExecutedOnTheMainThread(note,true));
+			
+			//PianoUI.NoteOn(channel, note, velocity);
+			// Get the correct instrument depending if it is a drum or not
+			SynthParameters sChan = synthChannels[channel];
             Patch inst = bank.GetPatch(sChan.bankSelect, sChan.program);
             if (inst == null)
                 return;
@@ -101,7 +114,8 @@ namespace AudioSynthesis.Synthesis
         /// <param name="note">The key of the voice.</param>
         public void NoteOff(int channel, int note)
         {
-            if (synthChannels[channel].holdPedal)
+			UnityMainThreadDispatcher.Instance().Enqueue(ThisWillBeExecutedOnTheMainThread(note, false));
+			if (synthChannels[channel].holdPedal)
             {
                 VoiceManager.VoiceNode node = voiceManager.registry[channel, note];
                 while (node != null)
