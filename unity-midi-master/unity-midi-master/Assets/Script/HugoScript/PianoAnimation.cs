@@ -52,7 +52,7 @@ public class PianoAnimation : MonoBehaviour
 
 	public void KeyStatusChange(int key, bool isOn)
 	{
-		int index = key -1 ; 
+		int index = key -21 ; 
 		Debug.Log("KeyStatusChange key = " + key+" isOn = "+isOn);
 		meshRenderers[index].material.SetColor("_Color", isOn ? ON : backupMR[index]);
 		
