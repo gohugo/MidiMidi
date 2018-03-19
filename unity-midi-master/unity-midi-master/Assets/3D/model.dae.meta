@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 0cdfe3c0c03e9d7489275a76d5e1c9f8
+timeCreated: 1520643220
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Black_Notes
+    100002: ID102
+    100004: ID106
+    100006: ID110
+    100008: ID114
+    100010: ID118
+    100012: ID122
+    100014: ID126
+    100016: ID130
+    100018: ID135
+    100020: ID139
+    100022: ID143
+    100024: ID147
+    100026: ID151
+    100028: ID155
+    100030: ID159
+    100032: ID16
+    100034: ID164
+    100036: ID168
+    100038: ID172
+    100040: ID176
+    100042: ID181
+    100044: ID185
+    100046: ID190
+    100048: ID194
+    100050: ID198
+    100052: ID202
+    100054: ID206
+    100056: ID210
+    100058: ID214
+    100060: ID219
+    100062: ID223
+    100064: ID228
+    100066: ID232
+    100068: ID236
+    100070: ID24
+    100072: ID240
+    100074: ID244
+    100076: ID248
+    100078: ID252
+    100080: ID257
+    100082: ID262
+    100084: ID266
+    100086: ID271
+    100088: ID276
+    100090: ID280
+    100092: ID285
+    100094: ID289
+    100096: ID294
+    100098: ID299
+    100100: ID30
+    100102: ID303
+    100104: ID307
+    100106: ID311
+    100108: ID315
+    100110: ID320
+    100112: ID325
+    100114: ID330
+    100116: ID335
+    100118: ID339
+    100120: ID343
+    100122: ID347
+    100124: ID351
+    100126: ID355
+    100128: ID359
+    100130: ID36
+    100132: ID363
+    100134: ID368
+    100136: ID372
+    100138: ID376
+    100140: ID380
+    100142: ID385
+    100144: ID390
+    100146: ID395
+    100148: ID400
+    100150: ID404
+    100152: ID408
+    100154: ID412
+    100156: ID417
+    100158: ID42
+    100160: ID421
+    100162: ID425
+    100164: ID429
+    100166: ID433
+    100168: ID437
+    100170: ID441
+    100172: ID48
+    100174: ID54
+    100176: ID60
+    100178: ID66
+    100180: ID72
+    100182: ID78
+    100184: ID82
+    100186: ID86
+    100188: ID90
+    100190: ID94
+    100192: ID98
+    100194: instance_0
+    100196: instance_1
+    100198: instance_10
+    100200: instance_11
+    100202: instance_12
+    100204: instance_13
+    100206: instance_14
+    100208: instance_15
+    100210: instance_16
+    100212: instance_2
+    100214: instance_3
+    100216: instance_4
+    100218: instance_4 1
+    100220: instance_4 2
+    100222: instance_4 3
+    100224: instance_4 4
+    100226: instance_4 5
+    100228: instance_4 6
+    100230: instance_5
+    100232: instance_5 1
+    100234: instance_5 2
+    100236: instance_5 3
+    100238: instance_5 4
+    100240: instance_5 5
+    100242: instance_5 6
+    100244: instance_6
+    100246: instance_6 1
+    100248: instance_6 2
+    100250: instance_6 3
+    100252: instance_6 4
+    100254: instance_6 5
+    100256: instance_6 6
+    100258: instance_7
+    100260: instance_7 1
+    100262: instance_7 2
+    100264: instance_7 3
+    100266: instance_7 4
+    100268: instance_7 5
+    100270: instance_7 6
+    100272: instance_8
+    100274: instance_8 1
+    100276: instance_8 2
+    100278: instance_8 3
+    100280: instance_8 4
+    100282: instance_8 5
+    100284: instance_8 6
+    100286: instance_9
+    100288: Key_Set
+    100290: Key_Set 1
+    100292: Key_Set 2
+    100294: Key_Set 3
+    100296: Key_Set 4
+    100298: Key_Set 5
+    100300: Key_Set 6
+    100302: Key_Set_2
+    100304: //RootNode
+    100306: piano_key
+    100308: piano_key 1
+    100310: piano_key 10
+    100312: piano_key 11
+    100314: piano_key 12
+    100316: piano_key 13
+    100318: piano_key 14
+    100320: piano_key 15
+    100322: piano_key 16
+    100324: piano_key 17
+    100326: piano_key 18
+    100328: piano_key 19
+    100330: piano_key 2
+    100332: piano_key 20
+    100334: piano_key 21
+    100336: piano_key 22
+    100338: piano_key 23
+    100340: piano_key 24
+    100342: piano_key 25
+    100344: piano_key 26
+    100346: piano_key 27
+    100348: piano_key 28
+    100350: piano_key 29
+    100352: piano_key 3
+    100354: piano_key 30
+    100356: piano_key 31
+    100358: piano_key 32
+    100360: piano_key 33
+    100362: piano_key 34
+    100364: piano_key 35
+    100366: piano_key 4
+    100368: piano_key 5
+    100370: piano_key 6
+    100372: piano_key 7
+    100374: piano_key 8
+    100376: piano_key 9
+    100378: skp_camera_88_Weighted_Piano_Keys
+    100380: skp_camera_Last_Saved_SketchUp_View
+    100382: Weighted_Piano_Keys
+    100384: White_Keys
+    400000: Black_Notes
+    400002: ID102
+    400004: ID106
+    400006: ID110
+    400008: ID114
+    400010: ID118
+    400012: ID122
+    400014: ID126
+    400016: ID130
+    400018: ID135
+    400020: ID139
+    400022: ID143
+    400024: ID147
+    400026: ID151
+    400028: ID155
+    400030: ID159
+    400032: ID16
+    400034: ID164
+    400036: ID168
+    400038: ID172
+    400040: ID176
+    400042: ID181
+    400044: ID185
+    400046: ID190
+    400048: ID194
+    400050: ID198
+    400052: ID202
+    400054: ID206
+    400056: ID210
+    400058: ID214
+    400060: ID219
+    400062: ID223
+    400064: ID228
+    400066: ID232
+    400068: ID236
+    400070: ID24
+    400072: ID240
+    400074: ID244
+    400076: ID248
+    400078: ID252
+    400080: ID257
+    400082: ID262
+    400084: ID266
+    400086: ID271
+    400088: ID276
+    400090: ID280
+    400092: ID285
+    400094: ID289
+    400096: ID294
+    400098: ID299
+    400100: ID30
+    400102: ID303
+    400104: ID307
+    400106: ID311
+    400108: ID315
+    400110: ID320
+    400112: ID325
+    400114: ID330
+    400116: ID335
+    400118: ID339
+    400120: ID343
+    400122: ID347
+    400124: ID351
+    400126: ID355
+    400128: ID359
+    400130: ID36
+    400132: ID363
+    400134: ID368
+    400136: ID372
+    400138: ID376
+    400140: ID380
+    400142: ID385
+    400144: ID390
+    400146: ID395
+    400148: ID400
+    400150: ID404
+    400152: ID408
+    400154: ID412
+    400156: ID417
+    400158: ID42
+    400160: ID421
+    400162: ID425
+    400164: ID429
+    400166: ID433
+    400168: ID437
+    400170: ID441
+    400172: ID48
+    400174: ID54
+    400176: ID60
+    400178: ID66
+    400180: ID72
+    400182: ID78
+    400184: ID82
+    400186: ID86
+    400188: ID90
+    400190: ID94
+    400192: ID98
+    400194: instance_0
+    400196: instance_1
+    400198: instance_10
+    400200: instance_11
+    400202: instance_12
+    400204: instance_13
+    400206: instance_14
+    400208: instance_15
+    400210: instance_16
+    400212: instance_2
+    400214: instance_3
+    400216: instance_4
+    400218: instance_4 1
+    400220: instance_4 2
+    400222: instance_4 3
+    400224: instance_4 4
+    400226: instance_4 5
+    400228: instance_4 6
+    400230: instance_5
+    400232: instance_5 1
+    400234: instance_5 2
+    400236: instance_5 3
+    400238: instance_5 4
+    400240: instance_5 5
+    400242: instance_5 6
+    400244: instance_6
+    400246: instance_6 1
+    400248: instance_6 2
+    400250: instance_6 3
+    400252: instance_6 4
+    400254: instance_6 5
+    400256: instance_6 6
+    400258: instance_7
+    400260: instance_7 1
+    400262: instance_7 2
+    400264: instance_7 3
+    400266: instance_7 4
+    400268: instance_7 5
+    400270: instance_7 6
+    400272: instance_8
+    400274: instance_8 1
+    400276: instance_8 2
+    400278: instance_8 3
+    400280: instance_8 4
+    400282: instance_8 5
+    400284: instance_8 6
+    400286: instance_9
+    400288: Key_Set
+    400290: Key_Set 1
+    400292: Key_Set 2
+    400294: Key_Set 3
+    400296: Key_Set 4
+    400298: Key_Set 5
+    400300: Key_Set 6
+    400302: Key_Set_2
+    400304: //RootNode
+    400306: piano_key
+    400308: piano_key 1
+    400310: piano_key 10
+    400312: piano_key 11
+    400314: piano_key 12
+    400316: piano_key 13
+    400318: piano_key 14
+    400320: piano_key 15
+    400322: piano_key 16
+    400324: piano_key 17
+    400326: piano_key 18
+    400328: piano_key 19
+    400330: piano_key 2
+    400332: piano_key 20
+    400334: piano_key 21
+    400336: piano_key 22
+    400338: piano_key 23
+    400340: piano_key 24
+    400342: piano_key 25
+    400344: piano_key 26
+    400346: piano_key 27
+    400348: piano_key 28
+    400350: piano_key 29
+    400352: piano_key 3
+    400354: piano_key 30
+    400356: piano_key 31
+    400358: piano_key 32
+    400360: piano_key 33
+    400362: piano_key 34
+    400364: piano_key 35
+    400366: piano_key 4
+    400368: piano_key 5
+    400370: piano_key 6
+    400372: piano_key 7
+    400374: piano_key 8
+    400376: piano_key 9
+    400378: skp_camera_88_Weighted_Piano_Keys
+    400380: skp_camera_Last_Saved_SketchUp_View
+    400382: Weighted_Piano_Keys
+    400384: White_Keys
+    2000000: skp_camera_88_Weighted_Piano_Keys
+    2000002: skp_camera_Last_Saved_SketchUp_View
+    2100000: Color_F01
+    2100002: Color_000
+    2100004: material
+    2100006: Color_007
+    2300000: ID16
+    2300002: ID24
+    2300004: ID30
+    2300006: ID36
+    2300008: ID42
+    2300010: ID48
+    2300012: ID54
+    2300014: ID60
+    2300016: //RootNode
+    2300018: piano_key
+    2300020: piano_key 1
+    2300022: piano_key 10
+    2300024: piano_key 11
+    2300026: piano_key 12
+    2300028: piano_key 13
+    2300030: piano_key 14
+    2300032: piano_key 15
+    2300034: piano_key 16
+    2300036: piano_key 17
+    2300038: piano_key 18
+    2300040: piano_key 19
+    2300042: piano_key 2
+    2300044: piano_key 20
+    2300046: piano_key 21
+    2300048: piano_key 22
+    2300050: piano_key 23
+    2300052: piano_key 24
+    2300054: piano_key 25
+    2300056: piano_key 26
+    2300058: piano_key 27
+    2300060: piano_key 28
+    2300062: piano_key 29
+    2300064: piano_key 3
+    2300066: piano_key 30
+    2300068: piano_key 31
+    2300070: piano_key 32
+    2300072: piano_key 33
+    2300074: piano_key 34
+    2300076: piano_key 35
+    2300078: piano_key 4
+    2300080: piano_key 5
+    2300082: piano_key 6
+    2300084: piano_key 7
+    2300086: piano_key 8
+    2300088: piano_key 9
+    2300090: White_Keys
+    3300000: ID16
+    3300002: ID24
+    3300004: ID30
+    3300006: ID36
+    3300008: ID42
+    3300010: ID48
+    3300012: ID54
+    3300014: ID60
+    3300016: //RootNode
+    3300018: piano_key
+    3300020: piano_key 1
+    3300022: piano_key 10
+    3300024: piano_key 11
+    3300026: piano_key 12
+    3300028: piano_key 13
+    3300030: piano_key 14
+    3300032: piano_key 15
+    3300034: piano_key 16
+    3300036: piano_key 17
+    3300038: piano_key 18
+    3300040: piano_key 19
+    3300042: piano_key 2
+    3300044: piano_key 20
+    3300046: piano_key 21
+    3300048: piano_key 22
+    3300050: piano_key 23
+    3300052: piano_key 24
+    3300054: piano_key 25
+    3300056: piano_key 26
+    3300058: piano_key 27
+    3300060: piano_key 28
+    3300062: piano_key 29
+    3300064: piano_key 3
+    3300066: piano_key 30
+    3300068: piano_key 31
+    3300070: piano_key 32
+    3300072: piano_key 33
+    3300074: piano_key 34
+    3300076: piano_key 35
+    3300078: piano_key 4
+    3300080: piano_key 5
+    3300082: piano_key 6
+    3300084: piano_key 7
+    3300086: piano_key 8
+    3300088: piano_key 9
+    3300090: White_Keys
+    4300000: SketchUp
+    4300002: White_Keys
+    4300004: ID16
+    4300006: ID24
+    4300008: ID30
+    4300010: ID36
+    4300012: ID42
+    4300014: ID48
+    4300016: ID54
+    4300018: ID60
+    4300020: piano_key
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

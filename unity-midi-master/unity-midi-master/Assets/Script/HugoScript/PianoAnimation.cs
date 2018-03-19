@@ -33,10 +33,6 @@ public class PianoAnimation : MonoBehaviour
 			Color c = meshRenderers[i].material.color;
 			backupMR[i] = new Color(c.r, c.g, c.b);
 		}
-		
-	
-		//backupMR = new List<MeshRenderer>(meshRenderers).ToArray();
-		 //Array.Copy(meshRenderers,backupMR, meshRenderers.Length);
 
 	}
 
